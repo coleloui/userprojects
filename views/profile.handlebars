@@ -1,0 +1,11 @@
+<h1>{{name}} welcome!</h1>
+
+{{#each projects as |userProj|}}
+<div>
+    <a href='/project/{{userProj.id}}'>{{userProj.name}}</a>
+      We need
+      {{userProj.needed_funding}}
+      to reach our goal!</span>
+    <p>{{userProj.description}}</p>
+  </div>
+  {{/each}}
